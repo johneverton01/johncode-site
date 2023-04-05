@@ -4,6 +4,10 @@ import { Section } from '@/components/Section'
 import { Slider } from '@/components/Slider'
 import { Code, Laptop, Palette, PencilSimple } from '@phosphor-icons/react'
 
+import { axeAccessibilityReporter } from '@/utils/axeAccessibilityReporter'
+
+axeAccessibilityReporter()
+
 export default function Home() {
   return (
     <>
