@@ -59,11 +59,10 @@ export function Slider() {
           {slides.map((_, index) => (
             <Circle
               className={clsx(
-                'drop-shadow-lg cursor-pointer transition-colors',
+                'drop-shadow-lg cursor-pointer transition-colors duration-300 hover:text-blue-500',
                 {
-                  'text-blue-500 hover:text-blue-500/60':
-                    currentIndex !== index,
-                  'text-purple hover:text-purple/60': currentIndex === index,
+                  'text-blue-400': currentIndex !== index,
+                  'text-blue-600': currentIndex === index,
                 },
               )}
               weight="fill"

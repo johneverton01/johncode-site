@@ -8,7 +8,7 @@ interface SectionProps {
 
 export function Section({ isBgBlue = false, children }: SectionProps) {
   return (
-    <section className={clsx('py-10', { 'bg-blue-500': isBgBlue })}>
+    <section className={clsx('py-10', { 'bg-blue-700': isBgBlue })}>
       <div
         className={clsx(
           'container mx-auto flex justify-between gap-5 flex-col md:flex-row px-4',

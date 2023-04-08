@@ -6,18 +6,29 @@ import Link from 'next/link'
 
 export function Header() {
   return (
-    <header className="bg-blue-500 h-20">
+    <header className="bg-blue-700 h-20">
       <nav className="mx-auto flex container items-center h-full justify-between p-6">
         <div className="flex lg:flex-1">
-          <Link href="/">
+          <Link href="/" arial-label="Pagina home">
             <Image src={logo} alt="John code" className="md:w-auto w-32" />
           </Link>
         </div>
         <div className="md:flex hidden w-full md:w-auto gap-5">
-          <NavLink href="/portfolio"> Portfólio </NavLink>
-          <NavLink href="/servico"> Serviços </NavLink>
-          <NavLink href="/blog"> Blog </NavLink>
-          <NavLink href="/contato"> Contato </NavLink>
+          <NavLink href="/portfolio" arial-label="Pagina Portfólio">
+            Portfólio
+          </NavLink>
+          <NavLink href="/servico" arial-label="Pagina Serviço">
+            Serviços
+          </NavLink>
+          <NavLink href="/sobre" arial-label="Pagina Sobre">
+            Sobre
+          </NavLink>
+          <NavLink href="/blog" arial-label="Pagina Blog">
+            Blog
+          </NavLink>
+          <NavLink href="/contato" arial-label="Pagina Contato">
+            Contato
+          </NavLink>
         </div>
         <div className="flex md:hidden">
           <DropdownMenu />
